@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+
+
+int main() {
+	
+	long long r, g, n, sum, fin;
+
+	cin >> r >> g >> n;
+
+	sum = n % (r + g + 1);
+	
+	if (sum <= r + 1)
+	{
+		fin = (r + 1) - sum;
+	}
+	else
+	{
+		fin = 0;
+	}
+	cout << n + fin;
+}
